@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit appweb_2_pycaret.py
+web: sh setup.sh && streamlit app.py
