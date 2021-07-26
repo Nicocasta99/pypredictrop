@@ -7,12 +7,10 @@ import numpy as np
 import joblib
 import pickle 
 import streamlit as st 
-import sklearn
 from pycaret.regression import *
 
 #cargar modelos 
 xg_boost=joblib.load("xgboost_prueba1.pkl")
-knn_test_xg=joblib.load("Final xgboost Model 25jul2021.pkl")
 
 #main 
 def main(): 
@@ -80,7 +78,7 @@ def main():
             st.write("ft/hr")            
 
         elif model == 'K Neighbors':
-            np2 = predict_model(knn_test_xg, data=df)
+            np2 = predict_model(xg_boost, data=df)
             np2=np2[['Label']]
             st.title("La ROP esperada es de:")
             st.write(np2)
