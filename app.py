@@ -10,7 +10,7 @@ import streamlit as st
 from pycaret.regression import *
 
 #cargar modelos 
-xg_boost=joblib.load("xgboost_prueba1.pkl")
+xg_boost=joblib.load("xg_prueba1.pkl")
 
 #main 
 def main(): 

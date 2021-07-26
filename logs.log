@@ -23,3 +23,63 @@
                               verbosity=0)]]), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
 2021-07-25 20:57:04,672:INFO:Checking exceptions
 2021-07-25 20:57:04,675:INFO:Preloading libraries
+2021-07-26 11:51:40,423:INFO:Initializing predict_model()
+2021-07-26 11:51:40,423:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression', target='ROP')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target='ROP...
+                              colsample_bytree=1, gamma=0, gpu_id=-1,
+                              importance_type='gain',
+                              interaction_constraints='',
+                              learning_rate=0.300000012, max_delta_step=0,
+                              max_depth=6, min_child_weight=1, missing=nan,
+                              monotone_constraints='()', n_estimators=100,
+                              n_jobs=-1, num_parallel_tree=1, random_state=123,
+                              reg_alpha=0, reg_lambda=1, scale_pos_weight=1,
+                              subsample=1, tree_method='auto',
+                              validate_parameters=1, verbosity=0)]]), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-07-26 11:51:40,425:INFO:Checking exceptions
+2021-07-26 11:51:40,426:INFO:Preloading libraries
+2021-07-26 12:02:16,263:INFO:Initializing predict_model()
+2021-07-26 12:02:16,265:INFO:predict_model(estimator=<_io.BufferedReader name='xgboost_prueba1.pkl'>, probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-07-26 12:02:16,266:INFO:Checking exceptions
+2021-07-26 12:02:16,267:INFO:Preloading libraries
+2021-07-26 12:02:16,267:ERROR:Pipeline not found. Exception:
+2021-07-26 12:02:16,286:ERROR:Traceback (most recent call last):
+  File "c:\users\administrador\anaconda3\lib\site-packages\pycaret\internal\tabular.py", line 8531, in predict_model
+    dtypes = prep_pipe.named_steps["dtypes"]
+NameError: name 'prep_pipe' is not defined
+
+2021-07-26 12:06:21,616:INFO:Initializing predict_model()
+2021-07-26 12:06:21,617:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='regression', target='ROP')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    target='ROP...
+                              colsample_bytree=1, gamma=0, gpu_id=-1,
+                              importance_type='gain',
+                              interaction_constraints='',
+                              learning_rate=0.300000012, max_delta_step=0,
+                              max_depth=6, min_child_weight=1, missing=nan,
+                              monotone_constraints='()', n_estimators=100,
+                              n_jobs=-1, num_parallel_tree=1, random_state=123,
+                              reg_alpha=0, reg_lambda=1, scale_pos_weight=1,
+                              subsample=1, tree_method='auto',
+                              validate_parameters=1, verbosity=0)]]), probability_threshold=None, encoded_labels=True, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.REGRESSION, display=None)
+2021-07-26 12:06:21,618:INFO:Checking exceptions
+2021-07-26 12:06:21,619:INFO:Preloading libraries
