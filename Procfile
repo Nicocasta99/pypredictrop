@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run penguins-app.pyappweb_2_pycaret
